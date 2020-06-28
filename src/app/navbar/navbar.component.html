@@ -1,0 +1,29 @@
+<ul class="nav justify-content-start">
+
+    <li>
+        <button type="button" class="btn btn-primary" (click)="navigateToAbout()">About</button>
+        
+    </li>
+    
+    <div class="dropdown show">
+        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" >
+          <li *ngFor="let each of navbarcourse_list">
+          <a class="dropdown-item" href="#" (click)="navigateToAbout()">{{each.name}}</a>
+          </li>
+          
+          
+        </div>
+      </div> 
+      <li>
+        <button type="button" class="btn btn-primary" (click)="navigateToYournotes()">Course Detail Info</button>
+        
+    </li> 
+    <li>
+      <button type="button" class="btn btn-primary" (click)="navigateToLogin()">Login</button>
+      
+  </li> 
+  </ul>
